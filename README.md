@@ -52,7 +52,3 @@ The messages sent to the player are a mixture of direct data, which are simply
 printed out by the client once received, and 'codes'. These instruct the client
 to run methods where mutliple prints/ specific input is required. This process
 could do with improvement, perhaps with a specific protocol class.
-
-Although implemented in the original text version, there is no quiting mechanism 
-so if you leave a game mid play this will currently stop any other players 
-from continuing that game.
