@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="392.0" style="-fx-border-color: black; -fx-border-width: 5; -fx-background-color: white; -fx-border-radius: 45;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterController">
+    <children>
+        <ImageView fitHeight="159.0" fitWidth="226.0" layoutX="78.0" layoutY="17.0">
+            <image>
+                <Image url="@/uno/UNO_Logo.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="207.0" prefHeight="17.0" prefWidth="380.0" text="New user, register now!" textAlignment="CENTER" />
+        <ImageView fitHeight="64.0" fitWidth="60.0" layoutX="22.0" layoutY="421.0">
+            <image>
+                <Image url="@/uno/draw.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="64.0" fitWidth="60.0" layoutX="18.0" layoutY="17.0">
+            <image>
+                <Image url="@/uno/reverse.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="316.0" layoutY="22.0">
+            <image>
+                <Image url="@/uno/skip.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="320.0" layoutY="430.0">
+            <image>
+                <Image url="@uno/number.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="8.0" layoutY="254.0" prefHeight="168.0" prefWidth="373.0">
+            <children>
+                <Button fx:id="registerButton" layoutX="254.0" layoutY="141.0" mnemonicParsing="false" onAction="#registerNow" style="-fx-translate-z: 99;" text="Register now" />
+                <Pane layoutX="-1.0" layoutY="3.0" prefHeight="36.0" prefWidth="306.0">
+                    <children>
+                        <Label layoutX="76.0" layoutY="10.0" text="Username" />
+                        <TextField fx:id="newUsername" layoutX="153.0" layoutY="5.0" prefHeight="27.0" prefWidth="204.0" />
+                    </children>
+                </Pane>
+                <Pane layoutX="11.0" layoutY="46.0" prefHeight="36.0" prefWidth="299.0">
+                    <children>
+                        <PasswordField fx:id="newPassword" layoutX="141.0" layoutY="1.0" prefHeight="27.0" prefWidth="204.0" />
+                        <Label layoutX="66.0" layoutY="6.0" text="Password" />
+                    </children>
+                </Pane>
+            <Label layoutX="25.0" layoutY="93.0" text="Confirm password" />
+            <PasswordField fx:id="checkPassword" layoutX="152.0" layoutY="88.0" prefHeight="26.0" prefWidth="204.0" />
+            <Button fx:id="goBack" layoutX="170.0" layoutY="141.0" mnemonicParsing="false" onAction="#backButton" text="Go back" />
+            </children>
+        </AnchorPane>
+    </children>
+</Pane>
